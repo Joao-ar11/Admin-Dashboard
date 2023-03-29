@@ -31,8 +31,10 @@ header {
 
     display: grid;
     grid-template-rows: 1fr 2fr;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 5fr 2fr;
     align-items: center;
+    row-gap: 20px;
+    font-weight: bold;
 }
 
 aside {
@@ -84,7 +86,7 @@ input[type="search"] {
     grid-template-columns: 1.8rem 2rem 90px;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 2rem;
 }
 
 .header-right button {
@@ -99,5 +101,46 @@ input[type="search"] {
 
 .header-right img {
     max-height: 2rem;
+    border-radius: 1rem;
+}
+
+.profile {
+    display: grid;
+    grid-template-columns: 4rem 275px;
+    align-items: center;
+    gap: 20px;
+}
+
+.profile img {
+    max-height: 4rem;
+    border-radius: 2rem;
+}
+
+.profile p {
+    font-size: 1.3rem;
+}
+
+.profile p::first-line {
+    font-size: .8rem;
+}
+
+.header-buttons {
+    margin-left: auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 70px);
+    align-items: center;
+    justify-items: center;
+    gap: 2rem;
+}
+
+.header-buttons button {
+    cursor: pointer;
+    height: 2rem;
+    width: 80px;
+    background-color: #1992d4;
+    color: #ffffff;
+    font-weight: bold;
+    border: none;
     border-radius: 1rem;
 }
