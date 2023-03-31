@@ -58,7 +58,7 @@ main {
     grid-area: 2 / 2 / 3 / 3;
 
     display: grid;
-    grid-template: 3fr 2fr / 10fr 4fr;
+    grid-template: 1fr 1fr / 10fr 4fr;
 }
 
 /* Header styles*/
@@ -202,9 +202,14 @@ h3 {
     background-color: #ffffff;
     padding: 20px;
     border-radius: 10px;
+    box-shadow: 4px 4px 3px #d2d8e0;
 }
-/* Annoucements styles */
 
+.trending > .box {
+    margin-bottom: 50px;
+}
+
+/* Annoucements styles */
 .announcements p {
     color: #ababab;
     font-size: .7rem;
@@ -224,4 +229,32 @@ h3 {
     border: none;
     height: .1px;
     background-color: #d2d8e0;
+}
+
+/* Trending styles */
+.trending-profile {
+    margin-bottom: 25px;
+
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
+}
+
+.trending a:last-child .trending-profile {
+    margin-bottom: 0;
+}
+
+.trending-profile img {
+    max-height: 3rem;
+    border-radius: 1.5rem;
+}
+
+.trending-profile p {
+    font-size: .9rem;
+    color: #ababab;
+}
+
+.trending-profile p::first-line {
+    color: #000000;
+    font-weight: bold;
 }
